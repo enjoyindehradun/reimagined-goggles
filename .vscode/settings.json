@@ -1,0 +1,11 @@
+{
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.stickyTabStops": true,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.linkedEditing": true,Add-LocalGroupMember
+    "editor.mouseWheelZoom": true,
+    "editor.parameterHints.cycle": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.rulers": []
+}Clear-BCCache

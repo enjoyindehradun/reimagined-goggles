@@ -1,0 +1,58 @@
+{
+	"folders": [
+		{
+			"path": "C:\Users\maruti\.vscode\.vscode\enjoyindehradun.code-workspace"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+
+		{
+			"name": "Simulate iOS in browser",
+			"type": "cordova",
+			"request": "launch",
+			"platform": "ios",
+			"target": "chrome",
+			"simulatePort": 8000,
+			"livereload": true,
+			"cwd": "${workspaceFolder}",
+			"sourceMaps": true
+		},
+			{
+				"name": "Arduino",
+				"type": "arduino",
+				"request": "launch",
+				"program": "${file}",
+				"cwd": "${workspaceFolder}",
+				"MIMode": "gdb",
+				"targetArchitecture": "arm",
+				"miDebuggerPath": "",
+				"debugServerPath": "",
+				"debugServerArgs": "",
+				"customLaunchSetupCommands": [
+					{
+						"text": "target remote localhost:3333"
+					},
+					{
+						"text": "file \"${file}\""
+					},
+					{
+						"text": "load"
+					},
+					{
+						"text": "monitor reset halt"
+					},
+					{
+						"text": "monitor reset init"
+					}
+				],
+				"stopAtEntry": true,
+				"serverStarted": "Info\\ :\\ [\\w\\d\\.]*:\\ hardware",
+				"launchCompleteCommand": "exec-continue",
+				"filterStderr": true,
+				"args": []
+			}
+		]
+	}
+}
